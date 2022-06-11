@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class LineComparison {
 
-	public static void main(String[] args) {
-		System.out.println("Welcome to Line Comparison Computation Program...");
+	public static void compareLine() {
 
 		Scanner scanner = new Scanner(System.in);
 
@@ -44,7 +43,15 @@ public class LineComparison {
 		String str2 = Double.toString(length1);
 		System.out.println("str2:-" + str2);
 
+		System.out.println(str2.equals(str1));
 		System.out.println(str2.compareTo(str1));
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to Line Comparison Computation Program...");
+
+		compareLine();
 
 	}
 }
